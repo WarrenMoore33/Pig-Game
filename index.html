@@ -8,6 +8,7 @@
     <title>Pig Game</title>
   </head>
   <body>
+    <button class="how-to-btn show-modal">How To Play?</button>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -31,6 +32,33 @@
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
     </main>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>👋🏽 You're Cute 😍 So Let's Play 🎭</h1>
+      <ol>
+        <li>
+          <strong>Roll Dice to receive current points</strong>
+          <ol style="list-style: lower-alpha; padding-left: 20px">
+            <li>
+              If you roll a "1" you lose your turn and the next player goes
+            </li>
+          </ol>
+        </li>
+        <li>
+          <strong
+            >Press hold to accumulate current points to your player</strong
+          >
+          <ol style="list-style: lower-alpha; padding-left: 20px">
+            <li>
+              Once you press "Hold" you lose your turn and the next player goes
+            </li>
+          </ol>
+        </li>
+        <li><strong>The first player to 100 total points wins! 🏆</strong></li>
+      </ol>
+    </div>
+    <div class="overlay hidden"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
